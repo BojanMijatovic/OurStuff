@@ -7,4 +7,48 @@ html {
   font-size: 62.5%;
   font-family: 'Noto Sans JP', sans-serif; }
 
+header {
+  background: #eaeff0; }
+  header .logo-part {
+    display: none; }
+  header .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    header .main-nav .nav-list {
+      align-items: center;
+      list-style: none; }
+      header .main-nav .nav-list .nav-item {
+        margin: 1rem;
+        text-transform: uppercase;
+        text-align: center; }
+        header .main-nav .nav-list .nav-item a {
+          text-decoration: none;
+          color: #06273c;
+          font-size: 1.2rem;
+          transition: all 0.2s ease-in-out 0.1s; }
+        header .main-nav .nav-list .nav-item a:hover {
+          color: #000000; }
+
+#home {
+  background: linear-gradient(30deg, rgba(180, 180, 180, 0.3) 17%, rgba(48, 48, 48, 0.4) 90%), url("../img/hero-cover.jpg") center/cover no-repeat;
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #home .home-title {
+    margin-top: 4rem;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    color: #eaeff0;
+    letter-spacing: 2px;
+    font-weight: 700; }
+  #home .home-subtitle {
+    font-size: 1.2rem;
+    color: #eaeff0;
+    padding: 1rem; }
+
 /*# sourceMappingURL=mainStyle.css.map */
