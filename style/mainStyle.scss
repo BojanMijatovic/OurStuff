@@ -100,3 +100,161 @@ header {
     }
   }
 }
+
+//  Services
+
+#services {
+  background: $main-light-color2;
+
+  //  Title
+  .services-title {
+    font-size: 2rem;
+    color: $main-color-dark1;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 4rem;
+  }
+  //  Subtitle
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: $main-color-dark1;
+    padding: 0.5rem;
+  }
+
+  .services-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    margin-top: 2rem;
+
+    //  Item
+    .services-item {
+      margin: 1.5rem 0;
+      text-align: center;
+      h3 {
+        font-size: 1.5rem;
+        color: $main-color-dark1;
+        padding-top: 2rem;
+      }
+    }
+    //  Icons Color
+    .fas {
+      color: $main-color-dark1;
+    }
+  }
+}
+
+//  Section About
+
+#about {
+  margin-top: 3rem;
+
+  //  Title
+  .about-title {
+    font-size: 2rem;
+    color: $main-color-dark1;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 4rem;
+  }
+  .about-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: $main-color-dark1;
+    padding: 1.5rem;
+  }
+
+  // Team
+  .about-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    // Persons
+
+    //  Person
+    .about__person {
+      background: linear-gradient(
+          30deg,
+          rgba(180, 180, 180, 0.7) 17%,
+          rgba(48, 48, 48, 0.7) 90%
+        ),
+        url('../img/portrait.jpg') center/cover no-repeat;
+      width: 100vw;
+      height: 35vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .about__name {
+        font-size: 2.2rem;
+        color: $main-light-color;
+        text-transform: uppercase;
+      }
+
+      .about__description {
+        font-size: 1.5rem;
+        color: $main-light-color;
+      }
+    }
+
+    //  Person 1
+    .about__person1 {
+      background: linear-gradient(
+          30deg,
+          rgba(180, 180, 180, 0.7) 17%,
+          rgba(48, 48, 48, 0.7) 90%
+        ),
+        url('../img/portrait1.jpg') center/cover no-repeat;
+      width: 100vw;
+      height: 35vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .about__name {
+        font-size: 2.2rem;
+        color: $main-light-color;
+        text-transform: uppercase;
+      }
+
+      .about__description {
+        font-size: 1.5rem;
+        color: $main-light-color;
+      }
+    }
+
+    //  Person 2
+    .about__person2 {
+      background: linear-gradient(
+          30deg,
+          rgba(180, 180, 180, 0.5) 17%,
+          rgba(48, 48, 48, 0.9) 90%
+        ),
+        url('../img/portrait2.jpg') center/cover no-repeat;
+      width: 100vw;
+      height: 35vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .about__name {
+        font-size: 2.2rem;
+        color: $main-light-color;
+        text-transform: uppercase;
+      }
+
+      .about__description {
+        font-size: 1.5rem;
+        color: $main-light-color;
+      }
+    }
+  }
+}

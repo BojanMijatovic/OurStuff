@@ -71,4 +71,98 @@ header {
     width: 100vw;
     height: 35vh; }
 
+#services {
+  background: #d6dee1; }
+  #services .services-title {
+    font-size: 2rem;
+    color: #06273c;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 4rem; }
+  #services p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #06273c;
+    padding: 0.5rem; }
+  #services .services-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    margin-top: 2rem; }
+    #services .services-items .services-item {
+      margin: 1.5rem 0;
+      text-align: center; }
+      #services .services-items .services-item h3 {
+        font-size: 1.5rem;
+        color: #06273c;
+        padding-top: 2rem; }
+    #services .services-items .fas {
+      color: #06273c; }
+
+#about {
+  margin-top: 3rem; }
+  #about .about-title {
+    font-size: 2rem;
+    color: #06273c;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 4rem; }
+  #about .about-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #06273c;
+    padding: 1.5rem; }
+  #about .about-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; }
+    #about .about-team .about__person {
+      background: linear-gradient(30deg, rgba(180, 180, 180, 0.7) 17%, rgba(48, 48, 48, 0.7) 90%), url("../img/portrait.jpg") center/cover no-repeat;
+      width: 100vw;
+      height: 35vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      #about .about-team .about__person .about__name {
+        font-size: 2.2rem;
+        color: #eaeff0;
+        text-transform: uppercase; }
+      #about .about-team .about__person .about__description {
+        font-size: 1.5rem;
+        color: #eaeff0; }
+    #about .about-team .about__person1 {
+      background: linear-gradient(30deg, rgba(180, 180, 180, 0.7) 17%, rgba(48, 48, 48, 0.7) 90%), url("../img/portrait1.jpg") center/cover no-repeat;
+      width: 100vw;
+      height: 35vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      #about .about-team .about__person1 .about__name {
+        font-size: 2.2rem;
+        color: #eaeff0;
+        text-transform: uppercase; }
+      #about .about-team .about__person1 .about__description {
+        font-size: 1.5rem;
+        color: #eaeff0; }
+    #about .about-team .about__person2 {
+      background: linear-gradient(30deg, rgba(180, 180, 180, 0.5) 17%, rgba(48, 48, 48, 0.9) 90%), url("../img/portrait2.jpg") center/cover no-repeat;
+      width: 100vw;
+      height: 35vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      #about .about-team .about__person2 .about__name {
+        font-size: 2.2rem;
+        color: #eaeff0;
+        text-transform: uppercase; }
+      #about .about-team .about__person2 .about__description {
+        font-size: 1.5rem;
+        color: #eaeff0; }
+
 /*# sourceMappingURL=mainStyle.css.map */
