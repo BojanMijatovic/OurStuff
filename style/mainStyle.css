@@ -191,7 +191,8 @@ header {
       margin: 1.5rem 0;
       border-radius: 1.2rem;
       padding: 1.5rem;
-      background: #eaeff0; }
+      background: #eaeff0;
+      width: 80vw; }
       #pricing .prices-all .prices-item .price-item__title {
         font-size: 1.4rem;
         color: #06273c;
@@ -215,12 +216,14 @@ header {
         color: #06273c;
         padding: 0.5rem 0 1rem 0; }
       #pricing .prices-all .prices-item .price-item__btn {
-        color: #06273c;
+        color: #000000;
         border: solid 2px #06273c;
         font-size: 1.2rem;
         padding: 0.5rem;
-        font-weight: 400;
-        border-radius: 0.5rem; }
+        font-weight: 700;
+        border-radius: 0.5rem;
+        width: 40vw;
+        cursor: pointer; }
 
 #contact {
   background: #eaeff0; }
@@ -308,5 +311,14 @@ header {
         color: #06273c;
         padding: 0.5rem;
         font-weight: 700; }
+
+footer {
+  background: #a2bdc7;
+  text-align: center;
+  padding: 1rem; }
+  footer .footer-description {
+    font-size: 1.4rem;
+    color: #06273c;
+    padding: 1rem; }
 
 /*# sourceMappingURL=mainStyle.css.map */

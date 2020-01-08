@@ -296,6 +296,7 @@ header {
       border-radius: 1.2rem;
       padding: 1.5rem;
       background: $main-light-color;
+      width: 80vw;
       //  Price Item Tittle
       .price-item__title {
         font-size: 1.4rem;
@@ -326,12 +327,14 @@ header {
       }
       //  Price Item Button
       .price-item__btn {
-        color: $main-color-dark1;
+        color: $black-color;
         border: solid 2px $main-color-dark1;
         font-size: 1.2rem;
         padding: 0.5rem;
-        font-weight: 400;
+        font-weight: 700;
         border-radius: 0.5rem;
+        width: 40vw;
+        cursor: pointer;
       }
     }
   }
@@ -455,5 +458,18 @@ header {
         font-weight: 700;
       }
     }
+  }
+}
+
+//  Footer
+
+footer {
+  background: $main-color;
+  text-align: center;
+  padding: 1rem;
+  .footer-description {
+    font-size: 1.4rem;
+    color: $main-color-dark1;
+    padding: 1rem;
   }
 }
