@@ -61,6 +61,7 @@ header {
     color: $main-light-color;
     letter-spacing: 2px;
     font-weight: 700;
+    padding: 1.5rem;
   }
   .home-subtitle {
     font-size: 1.2rem;
@@ -101,7 +102,7 @@ header {
   }
 }
 
-//  Services
+// Section Services
 
 #services {
   background: $main-light-color2;
@@ -254,6 +255,204 @@ header {
       .about__description {
         font-size: 1.5rem;
         color: $main-light-color;
+      }
+    }
+  }
+}
+
+//  Section Prices
+
+#pricing {
+  background: $main-light-color2;
+
+  //  Prices Title
+  .pricing-title {
+    font-size: 2rem;
+    color: $main-color-dark1;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 3rem;
+  }
+  .pricing--subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: $main-color-dark1;
+    padding: 0.5rem;
+  }
+
+  //  All
+  .prices-all {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+
+    //  Item
+    .prices-item {
+      text-align: center;
+      border: 2px solid $main-color-dark1;
+      margin: 1.5rem 0;
+      border-radius: 1.2rem;
+      padding: 1.5rem;
+      background: $main-light-color;
+      //  Price Item Tittle
+      .price-item__title {
+        font-size: 1.4rem;
+        color: $main-color-dark1;
+        padding: 0.5rem;
+        text-transform: uppercase;
+      }
+      .price-item__amount {
+        font-size: 1.4rem;
+        color: $main-color-dark1;
+        padding: 0.5rem;
+        font-weight: 700;
+      }
+      .product-item__support {
+        font-size: 1.2rem;
+        color: $main-color-dark1;
+        padding: 0.5rem;
+      }
+      .product-item__newsletter {
+        font-size: 1.2rem;
+        color: $main-color-dark1;
+        padding: 0.5rem;
+      }
+      .price-item__contactForm {
+        font-size: 1.2rem;
+        color: $main-color-dark1;
+        padding: 0.5rem 0 1rem 0;
+      }
+      //  Price Item Button
+      .price-item__btn {
+        color: $main-color-dark1;
+        border: solid 2px $main-color-dark1;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        font-weight: 400;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
+
+//  Section contact
+
+#contact {
+  background: $main-light-color;
+
+  .contact-title {
+    font-size: 2rem;
+    color: $main-color-dark1;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 3rem;
+  }
+
+  .contact-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: $main-color-dark1;
+    padding: 0.5rem;
+  }
+
+  //  Form
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2rem auto;
+
+    .form-text {
+      width: 80vw;
+      border: solid 2px $main-color-dark1;
+      padding: 0.5rem;
+      margin: 1.5rem;
+      border-radius: 0.5rem;
+    }
+
+    .form-email {
+      width: 80vw;
+      border: solid 2px $main-color-dark1;
+      padding: 0.5rem;
+      margin: 1.5rem;
+      border-radius: 0.5rem;
+    }
+
+    .form-textarea {
+      width: 80vw;
+      height: 8vh;
+      border: solid 2px $main-color-dark1;
+      padding: 0.5rem;
+      margin: 1rem;
+      border-radius: 0.5rem;
+    }
+
+    .form-submit {
+      width: 80vw;
+      border: solid 2px $main-color-dark1;
+      padding: 0.5rem;
+      margin: 1.5rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      color: $main-color-dark1;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: 700;
+      background: $main-color-white;
+      letter-spacing: 2px;
+    }
+  }
+
+  //  Info Part
+  .our-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .our-info__address {
+      list-style: none;
+      text-align: center;
+      margin-bottom: 2rem;
+
+      .our-info__tittle {
+        font-size: 1.8rem;
+        color: $main-color-dark1;
+        padding: 1rem;
+        font-weight: 700;
+      }
+
+      .our-info__street {
+        font-size: 1.4rem;
+        color: $main-color-dark1;
+        padding: 0.5rem;
+      }
+    }
+
+    .our-info__contacts {
+      list-style: none;
+      text-align: center;
+
+      .our-info__hello {
+        font-size: 1.8rem;
+        color: $main-color-dark1;
+        padding: 1rem;
+        font-weight: 700;
+      }
+
+      .our-info__email {
+        font-size: 1.4rem;
+        color: $main-color-dark1;
+        padding: 0.5rem;
+      }
+      .our-info__phone {
+        font-size: 1.5rem;
+        color: $main-color-dark1;
+        padding: 0.5rem;
+        font-weight: 700;
       }
     }
   }

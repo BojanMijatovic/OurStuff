@@ -45,7 +45,8 @@ header {
     text-transform: uppercase;
     color: #eaeff0;
     letter-spacing: 2px;
-    font-weight: 700; }
+    font-weight: 700;
+    padding: 1.5rem; }
   #home .home-subtitle {
     font-size: 1.2rem;
     color: #eaeff0;
@@ -164,5 +165,148 @@ header {
       #about .about-team .about__person2 .about__description {
         font-size: 1.5rem;
         color: #eaeff0; }
+
+#pricing {
+  background: #d6dee1; }
+  #pricing .pricing-title {
+    font-size: 2rem;
+    color: #06273c;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 3rem; }
+  #pricing .pricing--subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #06273c;
+    padding: 0.5rem; }
+  #pricing .prices-all {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none; }
+    #pricing .prices-all .prices-item {
+      text-align: center;
+      border: 2px solid #06273c;
+      margin: 1.5rem 0;
+      border-radius: 1.2rem;
+      padding: 1.5rem;
+      background: #eaeff0; }
+      #pricing .prices-all .prices-item .price-item__title {
+        font-size: 1.4rem;
+        color: #06273c;
+        padding: 0.5rem;
+        text-transform: uppercase; }
+      #pricing .prices-all .prices-item .price-item__amount {
+        font-size: 1.4rem;
+        color: #06273c;
+        padding: 0.5rem;
+        font-weight: 700; }
+      #pricing .prices-all .prices-item .product-item__support {
+        font-size: 1.2rem;
+        color: #06273c;
+        padding: 0.5rem; }
+      #pricing .prices-all .prices-item .product-item__newsletter {
+        font-size: 1.2rem;
+        color: #06273c;
+        padding: 0.5rem; }
+      #pricing .prices-all .prices-item .price-item__contactForm {
+        font-size: 1.2rem;
+        color: #06273c;
+        padding: 0.5rem 0 1rem 0; }
+      #pricing .prices-all .prices-item .price-item__btn {
+        color: #06273c;
+        border: solid 2px #06273c;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        font-weight: 400;
+        border-radius: 0.5rem; }
+
+#contact {
+  background: #eaeff0; }
+  #contact .contact-title {
+    font-size: 2rem;
+    color: #06273c;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 3rem; }
+  #contact .contact-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #06273c;
+    padding: 0.5rem; }
+  #contact .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2rem auto; }
+    #contact .contact-form .form-text {
+      width: 80vw;
+      border: solid 2px #06273c;
+      padding: 0.5rem;
+      margin: 1.5rem;
+      border-radius: 0.5rem; }
+    #contact .contact-form .form-email {
+      width: 80vw;
+      border: solid 2px #06273c;
+      padding: 0.5rem;
+      margin: 1.5rem;
+      border-radius: 0.5rem; }
+    #contact .contact-form .form-textarea {
+      width: 80vw;
+      height: 8vh;
+      border: solid 2px #06273c;
+      padding: 0.5rem;
+      margin: 1rem;
+      border-radius: 0.5rem; }
+    #contact .contact-form .form-submit {
+      width: 80vw;
+      border: solid 2px #06273c;
+      padding: 0.5rem;
+      margin: 1.5rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      color: #06273c;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: 700;
+      background: #ffffff;
+      letter-spacing: 2px; }
+  #contact .our-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #contact .our-info .our-info__address {
+      list-style: none;
+      text-align: center;
+      margin-bottom: 2rem; }
+      #contact .our-info .our-info__address .our-info__tittle {
+        font-size: 1.8rem;
+        color: #06273c;
+        padding: 1rem;
+        font-weight: 700; }
+      #contact .our-info .our-info__address .our-info__street {
+        font-size: 1.4rem;
+        color: #06273c;
+        padding: 0.5rem; }
+    #contact .our-info .our-info__contacts {
+      list-style: none;
+      text-align: center; }
+      #contact .our-info .our-info__contacts .our-info__hello {
+        font-size: 1.8rem;
+        color: #06273c;
+        padding: 1rem;
+        font-weight: 700; }
+      #contact .our-info .our-info__contacts .our-info__email {
+        font-size: 1.4rem;
+        color: #06273c;
+        padding: 0.5rem; }
+      #contact .our-info .our-info__contacts .our-info__phone {
+        font-size: 1.5rem;
+        color: #06273c;
+        padding: 0.5rem;
+        font-weight: 700; }
 
 /*# sourceMappingURL=mainStyle.css.map */
