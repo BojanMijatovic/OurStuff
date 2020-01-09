@@ -3,17 +3,53 @@
 
 //  Section Header
 header {
+  //  Media query
+  @media (min-width: 40rem) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .logo-part {
     display: none;
+
+    //  Media query
+    @media (min-width: 40rem) {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 1.6rem;
+    }
+
+    p {
+      display: none;
+      //  Media query
+      @media (min-width: 50rem) {
+        display: contents;
+      }
+    }
   }
+
   background: $main-light-color;
 
   // Main  Nav
   .main-nav {
     @include flex;
+
+    //  Media query
+    @media (min-width: 40rem) {
+      padding: 1.8rem;
+    }
     .nav-list {
       align-items: center;
       list-style: none;
+
+      //  Media query
+      @media (min-width: 40rem) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
       .nav-item {
         margin: 1rem;
         text-transform: uppercase;
@@ -23,6 +59,11 @@ header {
           color: $main-color-dark1;
           font-size: 1.2rem;
           transition: all 0.2s ease-in-out 0.1s;
+
+          //  Media query
+          @media (min-width: 40rem) {
+            font-size: 1.6rem;
+          }
         }
         a:hover {
           color: $black-color;
@@ -53,11 +94,21 @@ header {
     letter-spacing: 2px;
     font-weight: 700;
     padding: 1.5rem;
+
+    //  Media query
+    @media (min-width: 40rem) {
+      font-size: 4rem;
+    }
   }
   .home-subtitle {
     font-size: 1.2rem;
     color: $main-light-color;
     padding: 1rem;
+
+    //  Media query
+    @media (min-width: 40rem) {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -67,18 +118,47 @@ header {
   .portfolio-title {
     @include title;
     margin-top: 2rem;
+
+    //  Media query
+    @media (min-width: 40rem) {
+      font-size: 2.5rem;
+    }
   }
   //  Subtitle
   .portfolio-subtitle {
     @include subtitle;
     padding: 1rem;
+
+    //  Media query
+    @media (min-width: 40rem) {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
   }
   //  album
   .portfolio-album {
     @include flex;
+
+    //  Media query
+    @media (min-width: 50rem) {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+    }
+
     img {
       width: 100vw;
       height: 35vh;
+
+      //  Media query
+      @media (min-width: 30rem) {
+        width: 100vw;
+        height: 30vh;
+      }
+
+      @media (min-width: 50rem) {
+        width: 25vw;
+        height: 30vh;
+      }
     }
   }
 }
@@ -98,6 +178,14 @@ header {
   }
   .services-items {
     @include flex;
+
+    //  Media query
+    @media (min-width: 40rem) {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+
     list-style: none;
     margin-top: 2rem;
     //  Item
@@ -123,7 +211,6 @@ header {
   //  Title
   .about-title {
     @include title;
-    padding-top: 4rem;
   }
   .about-subtitle {
     @include subtitle;
@@ -133,6 +220,13 @@ header {
   // Team
   .about-team {
     @include flex;
+
+    //  Media query
+    @media (min-width: 50rem) {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
     //  Person
     .about__person {
       background: linear-gradient(
@@ -223,6 +317,13 @@ header {
       padding: 1.5rem;
       background: $main-light-color;
       width: 80vw;
+
+      //  Media query
+      @media (min-width: 40rem) {
+        border-radius: 0;
+        border: none;
+        width: 50vw;
+      }
       //  Price Item Tittle
       .price-item__title {
         font-size: 1.4rem;
@@ -261,6 +362,11 @@ header {
         border-radius: 0.5rem;
         width: 40vw;
         cursor: pointer;
+
+        //  Media query
+        @media (min-width: 40rem) {
+          width: 15vw;
+        }
       }
     }
   }
@@ -280,10 +386,26 @@ header {
     padding: 0.5rem;
   }
 
+  // Contact
+  .contact {
+    //  Media query
+    @media (min-width: 40rem) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
   //  Form
   .contact-form {
     @include flex;
     margin: 2rem auto;
+
+    //  Media query
+    @media (min-width: 40rem) {
+      margin: 1rem 0.5rem;
+    }
 
     .form-text {
       width: 80vw;
@@ -291,6 +413,11 @@ header {
       padding: 0.5rem;
       margin: 1.5rem;
       border-radius: 0.5rem;
+
+      //  Media query
+      @media (min-width: 40rem) {
+        width: 40vw;
+      }
     }
 
     .form-email {
@@ -299,6 +426,11 @@ header {
       padding: 0.5rem;
       margin: 1.5rem;
       border-radius: 0.5rem;
+
+      //  Media query
+      @media (min-width: 40rem) {
+        width: 40vw;
+      }
     }
 
     .form-textarea {
@@ -308,6 +440,11 @@ header {
       padding: 0.5rem;
       margin: 1rem;
       border-radius: 0.5rem;
+
+      //  Media query
+      @media (min-width: 40rem) {
+        width: 40vw;
+      }
     }
 
     .form-submit {
@@ -323,6 +460,11 @@ header {
       font-weight: 700;
       background: $main-color-white;
       letter-spacing: 2px;
+
+      //  Media query
+      @media (min-width: 40rem) {
+        width: 40vw;
+      }
     }
   }
 
@@ -383,13 +525,5 @@ footer {
     font-size: 1.4rem;
     color: $main-color-dark1;
     padding: 1rem;
-  }
-}
-
-//  Media
-
-@media (min-width: 30rem) {
-  footer {
-    background: red;
   }
 }
