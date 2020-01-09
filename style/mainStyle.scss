@@ -1,6 +1,5 @@
-@import 'generalStyle';
-@import 'responsive';
-@import 'mixIn';
+@import '_generalStyle.scss';
+@import '_mixIn.scss';
 
 //  Section Header
 header {
@@ -268,7 +267,6 @@ header {
 }
 
 //  Section contact
-
 #contact {
   background: $main-light-color;
 
@@ -385,5 +383,13 @@ footer {
     font-size: 1.4rem;
     color: $main-color-dark1;
     padding: 1rem;
+  }
+}
+
+//  Media
+
+@media (min-width: 30rem) {
+  footer {
+    background: red;
   }
 }
