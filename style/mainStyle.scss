@@ -1,5 +1,6 @@
-@import '_generalStyle.scss';
-@import '_responsive.scss';
+@import 'generalStyle';
+@import 'responsive';
+@import 'mixIn';
 
 //  Section Header
 header {
@@ -7,22 +8,17 @@ header {
     display: none;
   }
   background: $main-light-color;
-  //  Nav
-  .main-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 
+  // Main  Nav
+  .main-nav {
+    @include flex;
     .nav-list {
       align-items: center;
       list-style: none;
-
       .nav-item {
         margin: 1rem;
         text-transform: uppercase;
         text-align: center;
-
         a {
           text-decoration: none;
           color: $main-color-dark1;
@@ -38,7 +34,6 @@ header {
 }
 
 //  Section Home
-
 #home {
   background: linear-gradient(
       30deg,
@@ -48,10 +43,7 @@ header {
     url('../img/hero-cover.jpg') center/cover no-repeat;
   height: 50vh;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex;
 
   //  Home title and subtitle
   .home-title {
@@ -71,30 +63,20 @@ header {
 }
 
 //  Section portfolio
-
 #portfolio {
   // Title
   .portfolio-title {
-    font-size: 2rem;
-    color: $main-color-dark1;
-    text-align: center;
-    text-transform: uppercase;
+    @include title;
     margin-top: 2rem;
   }
   //  Subtitle
   .portfolio-subtitle {
-    text-align: center;
-    font-size: 1.2rem;
-    color: $main-color-dark1;
+    @include subtitle;
     padding: 1rem;
   }
-
   //  album
   .portfolio-album {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    @include flex;
     img {
       width: 100vw;
       height: 35vh;
@@ -103,34 +85,22 @@ header {
 }
 
 // Section Services
-
 #services {
   background: $main-light-color2;
-
   //  Title
   .services-title {
-    font-size: 2rem;
-    color: $main-color-dark1;
-    text-align: center;
-    text-transform: uppercase;
+    @include title;
     padding-top: 4rem;
   }
   //  Subtitle
   p {
-    text-align: center;
-    font-size: 1.2rem;
-    color: $main-color-dark1;
+    @include subtitle;
     padding: 0.5rem;
   }
-
   .services-items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    @include flex;
     list-style: none;
     margin-top: 2rem;
-
     //  Item
     .services-item {
       margin: 1.5rem 0;
@@ -149,34 +119,21 @@ header {
 }
 
 //  Section About
-
 #about {
   margin-top: 3rem;
-
   //  Title
   .about-title {
-    font-size: 2rem;
-    color: $main-color-dark1;
-    text-align: center;
-    text-transform: uppercase;
+    @include title;
     padding-top: 4rem;
   }
   .about-subtitle {
-    text-align: center;
-    font-size: 1.2rem;
-    color: $main-color-dark1;
+    @include subtitle;
     padding: 1.5rem;
   }
 
   // Team
   .about-team {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-
-    // Persons
-
+    @include flex;
     //  Person
     .about__person {
       background: linear-gradient(
@@ -187,21 +144,14 @@ header {
         url('../img/portrait.jpg') center/cover no-repeat;
       width: 100vw;
       height: 35vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      @include flex;
 
       .about__name {
         font-size: 2.2rem;
         color: $main-light-color;
         text-transform: uppercase;
       }
-
-      .about__description {
-        font-size: 1.5rem;
-        color: $main-light-color;
-      }
+      @include about-description;
     }
 
     //  Person 1
@@ -214,21 +164,14 @@ header {
         url('../img/portrait1.jpg') center/cover no-repeat;
       width: 100vw;
       height: 35vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      @include flex;
 
       .about__name {
         font-size: 2.2rem;
         color: $main-light-color;
         text-transform: uppercase;
       }
-
-      .about__description {
-        font-size: 1.5rem;
-        color: $main-light-color;
-      }
+      @include about-description;
     }
 
     //  Person 2
@@ -241,51 +184,35 @@ header {
         url('../img/portrait2.jpg') center/cover no-repeat;
       width: 100vw;
       height: 35vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      @include flex;
 
       .about__name {
         font-size: 2.2rem;
         color: $main-light-color;
         text-transform: uppercase;
       }
-
-      .about__description {
-        font-size: 1.5rem;
-        color: $main-light-color;
-      }
+      @include about-description;
     }
   }
 }
 
 //  Section Prices
-
 #pricing {
   background: $main-light-color2;
 
   //  Prices Title
   .pricing-title {
-    font-size: 2rem;
-    color: $main-color-dark1;
-    text-align: center;
-    text-transform: uppercase;
+    @include title;
     padding-top: 3rem;
   }
   .pricing--subtitle {
-    text-align: center;
-    font-size: 1.2rem;
-    color: $main-color-dark1;
+    @include subtitle;
     padding: 0.5rem;
   }
 
   //  All
   .prices-all {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    @include flex;
     list-style: none;
 
     //  Item
@@ -346,26 +273,18 @@ header {
   background: $main-light-color;
 
   .contact-title {
-    font-size: 2rem;
-    color: $main-color-dark1;
-    text-align: center;
-    text-transform: uppercase;
+    @include title;
     padding-top: 3rem;
   }
 
   .contact-subtitle {
-    text-align: center;
-    font-size: 1.2rem;
-    color: $main-color-dark1;
+    @include subtitle;
     padding: 0.5rem;
   }
 
   //  Form
   .contact-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    @include flex;
     margin: 2rem auto;
 
     .form-text {
@@ -411,10 +330,7 @@ header {
 
   //  Info Part
   .our-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex;
 
     .our-info__address {
       list-style: none;
@@ -460,9 +376,7 @@ header {
     }
   }
 }
-
 //  Footer
-
 footer {
   background: $main-color;
   text-align: center;

@@ -1,0 +1,29 @@
+//  Title
+@mixin title {
+  font-size: 2rem;
+  color: $main-color-dark1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+//  Subtitle
+@mixin subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: $main-color-dark1;
+}
+
+//  Display Flex
+@mixin flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@mixin about-description {
+  .about__description {
+    font-size: 1.5rem;
+    color: $main-light-color;
+  }
+}
